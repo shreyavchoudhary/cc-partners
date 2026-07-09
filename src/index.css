@@ -1,0 +1,20 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Manrope',sans-serif;
+}
+
+body{
+    background:#fff;
+}
+
+.site-background{
+
+    background:#2d2d2d;
+
+    min-height:100vh;
+
+    position:relative;
+} 
+

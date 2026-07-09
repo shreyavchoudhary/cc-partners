@@ -1,0 +1,51 @@
+.practice-detail{
+    max-width:1200px;
+    margin:120px auto 60px;
+    padding:0 8%;
+}
+
+.practice-detail h1{
+    font-size:46px;
+    color:#0d2b52;
+    margin-bottom:10px;
+}
+
+.practice-detail h2{
+    color:#c79b45;
+    margin:35px 0 20px;
+}
+
+.practice-detail p{
+    font-size:18px;
+    color:#555;
+    line-height:1.8;
+}
+
+.practice-detail ul{
+    margin-top:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:15px;
+}
+
+.practice-detail li{
+    list-style:none;
+    background:#f8f8f8;
+    padding:16px;
+    border-left:4px solid #c79b45;
+    border-radius:8px;
+}
+
+.back-btn{
+    display:inline-block;
+    margin-top:40px;
+    padding:12px 28px;
+    background:#0d2b52;
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.back-btn:hover{
+    background:#c79b45;
+}
