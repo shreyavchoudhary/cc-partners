@@ -2,8 +2,8 @@ import "../styles/Partners.css";
 
 import partner11 from "../assets/partner11.webp";
 import partner2 from "../assets/partner2.webp";
-import partner3 from "../assets/partner3.webp";
-import partner4 from "../assets/partner4.webp";
+import partner3 from "../assets/image12.png";
+import partner4 from "../assets/photo5.png";
 
 const partners = [
   {

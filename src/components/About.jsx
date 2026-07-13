@@ -1,5 +1,5 @@
 import "../styles/About.css";
-import logo from "../assets/cc logo.webp";
+import about from "../assets/aboutuss.jpeg";
 
 function About() {
   return (
@@ -12,15 +12,15 @@ function About() {
         <h2>Welcome to CC Partners</h2>
 
         <p>
-          CC Partners brings together experienced legal professionals
-          dedicated to delivering practical, strategic and business-focused
-          legal solutions.
+          We believe exceptional legal counsel goes beyond interpreting the law—it empowers decisions, protects investments, and creates opportunities.
         </p>
 
         <p>
-          We believe in building long-term client relationships through
-          integrity, transparency and excellence.
+          Our firm advises corporations, financial institutions, developers, investors, entrepreneurs, and private clients on complex legal and commercial matters across diverse sectors.
         </p>
+
+        <p>Driven by a deep understanding of business, we deliver advice that is commercially sound, strategically focused, and tailored to every client's objectives.</p>
+        <p>We are committed to building lasting relationships founded on trust, responsiveness, and uncompromising professional standards.</p>
 
         {/* <a href="#">→ Our Story</a> */}
 
@@ -28,7 +28,7 @@ function About() {
 
       <div className="about-image">
 
-        <img src={logo} alt="CC Partners"/>
+        <img src={about} alt="CC Partners"/>
 
       </div>
 

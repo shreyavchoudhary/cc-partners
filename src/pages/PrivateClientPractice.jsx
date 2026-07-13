@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "../styles/PracticeDetail.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function PrivateClientPractice() {
   return (
+     <>
+    <Navbar />
     <section className="practice-detail">
       <h1>Private Client Practice</h1>
 
@@ -37,6 +41,8 @@ function PrivateClientPractice() {
         ← Back to Home
       </Link>
     </section>
+    <Footer />
+  </>
   );
 }
 

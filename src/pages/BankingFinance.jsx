@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "../styles/PracticeDetail.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function BankingFinance() {
   return (
+     <>
+    <Navbar />
     <section className="practice-detail">
 
       <h1>Banking & Finance</h1>
@@ -39,6 +43,8 @@ function BankingFinance() {
       </Link>
 
     </section>
+     <Footer />
+  </>
   );
 }
 

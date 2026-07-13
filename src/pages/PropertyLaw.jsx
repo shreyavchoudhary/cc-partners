@@ -1,8 +1,12 @@
 import "../styles/BlogDetail.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function PropertyLaw(){
 
   return(
+      <>
+    <Navbar />
 
     <section className="blog-detail">
 
@@ -74,6 +78,8 @@ function PropertyLaw(){
 
 
     </section>
+     <Footer />
+  </>
 
   )
 

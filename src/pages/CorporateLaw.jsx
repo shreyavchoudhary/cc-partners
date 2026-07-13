@@ -1,8 +1,12 @@
 import "../styles/BlogDetail.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function CorporateLaw(){
 
   return(
+    <>
+  <Navbar />
 
     <section className="blog-detail">
 
@@ -63,6 +67,8 @@ function CorporateLaw(){
       </div>
 
     </section>
+     <Footer />
+</>
 
   )
 

@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "../styles/PracticeDetail.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function DisputeResolution() {
   return (
+      <>
+    <Navbar />
     <section className="practice-detail">
 
       <h1>Dispute Resolution</h1>
@@ -43,6 +47,8 @@ function DisputeResolution() {
       </Link>
 
     </section>
+    <Footer />
+  </>
   );
 }
 

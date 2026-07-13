@@ -1,8 +1,12 @@
 import { Link } from "react-router-dom";
 import "../styles/PracticeDetail.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 function RealEstatePractice() {
   return (
+     <>
+    <Navbar />
     <section className="practice-detail">
 
       <h1>Real Estate Practice</h1>
@@ -74,6 +78,8 @@ function RealEstatePractice() {
       </Link>
 
     </section>
+     <Footer />
+  </>
   );
 }
 

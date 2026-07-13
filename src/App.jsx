@@ -24,9 +24,30 @@ import RealEstatePractice from "./pages/RealEstatePractice";
 
 import Careers from "./pages/Careers";
 
+import CareerApplication from "./pages/CareerApplication";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
+
+import ScrollToTop from "./components/ScrollToTop";
+
 
 function Home(){
+  const location = useLocation();
 
+useEffect(() => {
+  if (location.state?.section) {
+    const section = document.getElementById(location.state.section);
+
+    if (section) {
+      setTimeout(() => {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }, 100);
+    }
+  }
+}, [location]);
   return(
     <>
       <Navbar />
@@ -60,42 +81,73 @@ function Home(){
 function App() {
 
   return (
+    <>
+      <ScrollToTop />
 
-    <Routes>
+      <Routes>
 
-      <Route 
-        path="/"
-        element={<Home />}
-      />
+        <Route
+          path="/"
+          element={<Home />}
+        />
 
+        <Route
+          path="/blog/corporate-legal-compliance"
+          element={<CorporateLaw />}
+        />
 
-      <Route
-        path="/blog/corporate-legal-compliance"
-        element={<CorporateLaw />}
-      />
+        <Route
+          path="/blog/legal-advice"
+          element={<LegalAdvice />}
+        />
 
-      <Route
- path="/blog/legal-advice"
- element={<LegalAdvice />}
-/>
+        <Route
+          path="/blog/property-law"
+          element={<PropertyLaw />}
+        />
 
+        <Route
+          path="/private-client-practice"
+          element={<PrivateClientPractice />}
+        />
 
-<Route
- path="/blog/property-law"
- element={<PropertyLaw />}
-/>
+        <Route
+          path="/banking-finance"
+          element={<BankingFinance />}
+        />
 
-<Route path="/private-client-practice" element={<PrivateClientPractice />} />
-<Route path="/banking-finance" element={<BankingFinance />} />
-<Route path="/dispute-resolution" element={<DisputeResolution />} />
-<Route path="/capital-markets" element={<CapitalMarkets />} />
-<Route path="/land-clearance" element={<LandClearance />} />
-<Route path="/real-estate" element={<RealEstatePractice />} />  
+        <Route
+          path="/dispute-resolution"
+          element={<DisputeResolution />}
+        />
 
-<Route path="/careers" element={<Careers />} />
+        <Route
+          path="/capital-markets"
+          element={<CapitalMarkets />}
+        />
 
-    </Routes>
+        <Route
+          path="/land-clearance"
+          element={<LandClearance />}
+        />
 
+        <Route
+          path="/real-estate"
+          element={<RealEstatePractice />}
+        />
+
+        <Route
+          path="/careers"
+          element={<Careers />}
+        />
+
+        <Route
+          path="/career-application"
+          element={<CareerApplication />}
+        />
+
+      </Routes>
+    </>
   );
 
 }

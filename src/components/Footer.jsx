@@ -116,12 +116,7 @@ function Footer() {
 
         <div className="footer-box">
           <h2>CC Partners</h2>
-
-          <p>
-            Trusted legal advisors delivering practical,
-            strategic and result-oriented legal solutions
-            with integrity and professionalism.
-          </p>
+          
         </div>
 
         <div className="footer-box">
