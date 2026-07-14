@@ -8,12 +8,57 @@ import { useState } from "react";
 
 function CareerApplication() {
     const [success, setSuccess] = useState(false);
-    const handleSubmit = (e) => {
+    const [formData, setFormData] = useState({
+  fullName: "",
+  email: "",
+  phone: "",
+  position: "",
+  coverLetter: "",
+});
+
+const [resume, setResume] = useState(null);
+const handleSubmit = async (e) => {
   e.preventDefault();
 
-  setSuccess(true);
+  const data = new FormData();
 
-  e.target.reset();
+  data.append("fullName", formData.fullName);
+  data.append("email", formData.email);
+  data.append("phone", formData.phone);
+  data.append("position", formData.position);
+  data.append("coverLetter", formData.coverLetter);
+
+  if (resume) {
+    data.append("resume", resume);
+  }
+
+  try {
+    const response = await fetch("http://localhost:5000/api/career", {
+      method: "POST",
+      body: data,
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      setSuccess(true);
+
+      setFormData({
+        fullName: "",
+        email: "",
+        phone: "",
+        position: "",
+        coverLetter: "",
+      });
+
+      setResume(null);
+    } else {
+      alert(result.message);
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Something went wrong.");
+  }
 };
   return (
     <>
@@ -54,40 +99,63 @@ function CareerApplication() {
           <form onSubmit={handleSubmit}>
 
             <input
-              type="text"
-              placeholder="Full Name"
-              required
-            />
+  type="text"
+  placeholder="Full Name"
+  value={formData.fullName}
+  onChange={(e) =>
+    setFormData({ ...formData, fullName: e.target.value })
+  }
+  required
+/>
+
+           <input
+  type="email"
+  placeholder="Email Address"
+  value={formData.email}
+  onChange={(e) =>
+    setFormData({ ...formData, email: e.target.value })
+  }
+  required
+/>
 
             <input
-              type="email"
-              placeholder="Email Address"
-              required
-            />
+  type="tel"
+  placeholder="Phone Number"
+  value={formData.phone}
+  onChange={(e) =>
+    setFormData({ ...formData, phone: e.target.value })
+  }
+  required
+/>
 
-            <input
-              type="tel"
-              placeholder="Phone Number"
-              required
-            />
+           <select
+  value={formData.position}
+  onChange={(e) =>
+    setFormData({ ...formData, position: e.target.value })
+  }
+  required
+>
+  <option value="">Select Position</option>
+  <option>Associate Lawyer</option>
+  <option>Corporate Legal Associate</option>
+  <option>Litigation Associate</option>
+  <option>Legal Intern</option>
+</select>
 
-            <select required>
-              <option>Select Position</option>
-              <option>Associate Lawyer</option>
-              <option>Corporate Legal Associate</option>
-              <option>Litigation Associate</option>
-              <option>Legal Intern</option>
-            </select>
+<textarea
+  rows="5"
+  placeholder="Cover Letter"
+  value={formData.coverLetter}
+  onChange={(e) =>
+    setFormData({ ...formData, coverLetter: e.target.value })
+  }
+/>
 
-            <textarea
-              rows="5"
-              placeholder="Cover Letter"
-            ></textarea>
-
-            <input
-              type="file"
-              accept=".pdf,.doc,.docx"
-            />
+<input
+  type="file"
+  accept=".pdf,.doc,.docx"
+  onChange={(e) => setResume(e.target.files[0])}
+/>
 
             <button type="submit">
               Submit Application

@@ -17,7 +17,7 @@ function LegalAdvice(){
         </span>
 
 
-        <h1>
+        <h1 className="practice-title-detail">
           Importance of Professional Legal Advice
         </h1>
 

@@ -37,7 +37,7 @@ function PropertyLaw(){
         <div className="blog-content">
 
 
-          <h2>
+          <h2 className="practice-title-detail">
             Importance of Property Verification
           </h2>
 

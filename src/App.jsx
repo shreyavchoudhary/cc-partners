@@ -21,6 +21,7 @@ import DisputeResolution from "./pages/DisputeResolution";
 import CapitalMarkets from "./pages/CapitalMarkets";
 import LandClearance from "./pages/LandClearance";
 import RealEstatePractice from "./pages/RealEstatePractice";
+import WhiteCollarCriminalDefence from "./pages/White-CollarPractice";
 
 import Careers from "./pages/Careers";
 
@@ -135,6 +136,11 @@ function App() {
           path="/real-estate"
           element={<RealEstatePractice />}
         />
+
+        <Route
+    path="/white-collar-criminal-defence"
+    element={<WhiteCollarCriminalDefence />}
+  />
 
         <Route
           path="/careers"

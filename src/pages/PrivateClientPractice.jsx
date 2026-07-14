@@ -8,7 +8,7 @@ function PrivateClientPractice() {
      <>
     <Navbar />
     <section className="practice-detail">
-      <h1>Private Client Practice</h1>
+      <h1 className="practice-title-detail">Private Client Practice</h1>
 
       <p>
         <strong>Protecting Wealth Across Generations</strong>

@@ -32,7 +32,7 @@ function Blog() {
 
         <span>LEGAL INSIGHTS</span>
 
-        <h2>Latest Articles & Updates</h2>
+        <h2 className="blog-font">Latest Articles & Updates</h2>
 
         <p>
           Stay informed with expert legal insights, industry updates and

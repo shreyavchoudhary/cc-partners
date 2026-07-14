@@ -138,12 +138,17 @@
 }
 
 .practice-title h2 {
-    font-size: 40px;
+     font-size:52px;
+    color:#162235;
+    line-height:1.2;
+    margin:20px 0;
+    position:relative;
+    /* font-size: 52px;
     font-weight: 700;
     color: #16263d;
     line-height: 1.25;
     margin-bottom: 18px;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.5px; */
 }
 
 .practice-title p {
@@ -539,3 +544,120 @@
     }
 
 }
+/* Heading Row */
+
+.page-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+/* Heading */
+
+.page-title h1{
+    margin: 0;
+    font-size: 48px;
+    color: #0F2747;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+/* Expert Badge */
+
+.expert-badge{
+    background: #041f43;
+    color: #fff;
+    border: 1px solid #C8A13A;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+.expert-badges{
+    background: #17135a;
+    color: ;
+    border: 1px solid #C8A13A;
+    padding: 8px 18px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+@media (max-width:768px){
+
+    .page-title{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .page-title h1{
+        font-size: 34px;
+    }
+
+    .expert-badge{
+        font-size:12px;
+        padding:7px 14px;
+    }
+
+}
+
+.practice-card{
+    position: relative;
+}
+
+/* .{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    background: #0F2747;
+    color: #C8A13A;
+
+    border: 1px solid #C8A13A;
+    border-radius: 4px;
+
+    padding: 6px 12px;
+
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+} */
+
+#practice{ 
+    font-family:'Times New Roman', Times, serif;
+}
+
+.info{
+    font-family:'Times New Roman', Times, serif;
+}
+
+.practice-font{
+     font-family:'Times New Roman', Times, serif;
+}
+.card-expert-badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  background: #0b0548;
+  color: #c79b45;
+  border: 1px solid #c79b45;
+
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  padding: 6px 12px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+

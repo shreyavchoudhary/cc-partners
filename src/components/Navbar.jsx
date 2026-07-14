@@ -174,7 +174,7 @@ import "../styles/Navbar.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../assets/cc logo.webp";
+import logo from "../assets/cc-partnerslogo.jpeg";
 
 function Navbar() {
   const navigate = useNavigate();

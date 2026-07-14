@@ -9,7 +9,7 @@ function CapitalMarkets() {
     <Navbar />
     <section className="practice-detail">
 
-      <h1>Capital Markets</h1>
+      <h1 className="practice-title-detail">Capital Markets</h1>
 
       <p>
         <strong>Supporting Businesses Through Growth</strong>

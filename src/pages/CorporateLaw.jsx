@@ -16,7 +16,7 @@ function CorporateLaw(){
           CORPORATE LAW
         </span>
 
-        <h1>
+        <h1 className="practice-title-detail">
           Understanding Corporate Legal Compliance
         </h1>
 

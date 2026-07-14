@@ -263,30 +263,6 @@ nav ul li{
 
 }
 
-/* =========================
-   MOBILE
-========================= */
-
-@media (max-width:768px){
-
-nav{
-    height:70px;
-    padding:0 15px;
-}
-
-.logo img{
-    height:50px;
-}
-
-nav ul{
-    gap:14px;
-}
-
-nav ul li{
-    font-size:14px;
-}
-
-}
 
 /* =========================
    SMALL MOBILE
@@ -316,7 +292,7 @@ nav ul li{
 /* ===========================
    NAVBAR
 =========================== */
-
+/* 
 nav{
     position:fixed;
     top:0;
@@ -324,6 +300,44 @@ nav{
     width:100%;
     height:80px;
     background:#fff; 
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 6%;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    z-index:1000;
+    box-sizing:border-box;
+}
+
+/* Logo */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:80px;
+    /* background:#fff;  */
+     background: linear-gradient(
+        135deg,
+        
+        rgba(7,18,42,.95) 0%,
+        rgba(7,18,42,.82) 100%
+    );
     display:flex;
     justify-content:space-between;
     align-items:center;
@@ -359,7 +373,8 @@ nav{
     list-style:none;
     cursor:pointer;
     /* color:#222; */
-    color:#0b0b0b;
+    /* color:#0b0b0b; */
+    color:#fff;
     font-size:17px;
     font-weight:500;
     transition:.3s;
@@ -451,7 +466,8 @@ nav{
     right:-100%;
     width:260px;
     height:calc(100vh - 70px);
-    background:#fff;
+    /* background:#fff; */
+    background: rgba(7, 18, 42, 0.82);
     flex-direction:column;
     align-items:flex-start;
     gap:0;
@@ -467,7 +483,7 @@ nav{
 .nav-links li{
     width:100%;
     padding:18px 0;
-    border-bottom:1px solid #eee;
+    /* border-bottom:1px solid #eee; */
     font-size:17px;
 }
 
@@ -493,10 +509,5 @@ nav{
 
 }
 
-
-
-
-
- 
 
 

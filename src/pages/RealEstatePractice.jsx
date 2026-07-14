@@ -9,7 +9,7 @@ function RealEstatePractice() {
     <Navbar />
     <section className="practice-detail">
 
-      <h1>Real Estate Practice</h1>
+      <h1 className="practice-title-detail">Real Estate Practice</h1>
 
       <p>
         <strong>Comprehensive Legal Support Throughout the Development Lifecycle</strong>

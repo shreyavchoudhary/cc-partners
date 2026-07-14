@@ -9,7 +9,7 @@ function DisputeResolution() {
     <Navbar />
     <section className="practice-detail">
 
-      <h1>Dispute Resolution</h1>
+      <h1 className="practice-title-detail">Dispute Resolution</h1>
 
       <p>
         <strong>Strategic Resolution of Commercial Disputes</strong>

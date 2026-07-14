@@ -9,7 +9,7 @@ function LandClearance() {
     <Navbar />
     <section className="practice-detail">
 
-      <h1>Land Clearance & Dispute Handling</h1>
+      <h1 className="practice-title-detail">Land Clearance & Dispute Handling</h1>
 
       <p>
         <strong>One of Our Core Specializations</strong>

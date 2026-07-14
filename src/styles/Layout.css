@@ -4,13 +4,19 @@
     padding:120px 0;
     overflow:hidden;
 
-    background:
+    /* background:
     linear-gradient(
         180deg,
         #2d221d 0%,
         #3b312b 35%,
         #473c34 100%
-    );
+    ); */
+    background:
+linear-gradient(
+    180deg,
+    
+    #07122A 100%
+);
 }
 
 /* Background Pattern */

@@ -9,7 +9,7 @@ function BankingFinance() {
     <Navbar />
     <section className="practice-detail">
 
-      <h1>Banking & Finance</h1>
+      <h1 className="practice-title-detail">Banking & Finance</h1>
 
       <p><strong>Structuring Financial Transactions with Confidence</strong></p>
 

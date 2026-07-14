@@ -116,6 +116,7 @@ function Footer() {
 
         <div className="footer-box">
           <h2>CC Partners</h2>
+          <p>Trusted legal counsel for India's leading businesses. Headquartered in Delhi/NCR.</p>
           
         </div>
 
@@ -162,7 +163,7 @@ function Footer() {
           <h3>Contact</h3>
 
           <p>
-            <FaMapMarkerAlt /> Your Office Address
+            <FaMapMarkerAlt /> C-6, 1st & 2nd Floor, Tees Hazari Court, New Delhi — 110054
           </p>
 
           <p>

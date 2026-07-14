@@ -103,6 +103,12 @@ const practiceAreas = [
     desc: "Comprehensive legal support across the complete real estate lifecycle.",
     link: "/real-estate",
   },
+  {
+  icon: <FaBalanceScale />,
+  title: "White Collar Crime & Criminal Defence",
+  desc: "Strategic legal representation in white collar crimes, criminal investigations, prosecutions, bail, trials, and appellate matters.",
+  link: "/white-collar-criminal-defence",
+},
 ];
 
 function PracticeAreas() {
@@ -112,7 +118,7 @@ function PracticeAreas() {
       <div className="practice-title">
         <span>OUR PRACTICE AREAS</span>
 
-        <h2>Legal Expertise Across Every Sector</h2>
+        <h2 className="info">Legal Expertise Across Every Sector</h2>
 
         <p>
           We provide strategic legal advice tailored to businesses,
@@ -120,25 +126,32 @@ function PracticeAreas() {
         </p>
       </div>
 
-      <div className="practice-grid">
-        {practiceAreas.map((area, index) => (
-          <div className="practice-card" key={index}>
+    <div className="practice-grid">
+  {practiceAreas.map((area, index) => (
+    <div className="practice-card" key={index}>
 
-            <div className="practice-icon">
-              {area.icon}
-            </div>
+      {/* Sirf White Collar card ke liye badge */}
+      {area.title === "White Collar Crime & Criminal Defence" && (
+        <span className="card-expert-badge">
+          EXPERT FIELD
+        </span>
+      )}
 
-            <h3>{area.title}</h3>
-
-            <p>{area.desc}</p>
-
-            <Link to={area.link} className="learn-btn">
-                Learn More →
-            </Link>
-
-          </div>
-        ))}
+      <div className="practice-icon">
+        {area.icon}
       </div>
+
+      <h3 className="practice-title-detail">{area.title}</h3>
+
+      <p>{area.desc}</p>
+
+      <Link to={area.link} className="learn-btn">
+        Learn More →
+      </Link>
+
+    </div>
+  ))}
+</div>
 
     </section>
   );

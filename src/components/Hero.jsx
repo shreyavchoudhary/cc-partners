@@ -90,6 +90,17 @@ import "../styles/Hero.css";
 import heroVideo from "../assets/hero1.mp4";
 
 function Hero() {
+  const practiceAreas = [
+    "Corporate & Commercial",
+    "Banking & Finance",
+    "Capital Markets",
+    "Real Estate",
+    "Land Advisory",
+    "Dispute Resolution",
+    "Private Client",
+    "White-Collar Crime",
+  ];
+
   const scrollToSection = (id) => {
     const section = document.getElementById(id);
 
@@ -122,8 +133,18 @@ function Hero() {
           <h1>Legal Excellence. Commercial Intelligence</h1>
 
           <p>
-            From boardrooms to courtrooms, we advise corporations, financial institutions, developers, investors, and family businesses on matters that define growth, manage risk, and create lasting value.
+            We help businesses navigate complexity with confidence — delivering commercially focused legal solutions across transactions, disputes, finance, and real estate.
           </p>
+
+           {/* Practice Area Boxes */}
+          <div className="practice-tags">
+            {practiceAreas.map((item, index) => (
+              <div key={index} className="practice-tag">
+                {item}
+              </div>
+            ))}
+          </div>
+          
 
           <div className="buttons">
             <button
